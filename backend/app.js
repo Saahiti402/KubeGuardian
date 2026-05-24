@@ -17,7 +17,7 @@ const pool = new Pool({
 
 app.get('/', (req, res) => {
     res.json({
-        message: 'KubeGuardian Backend Running'
+        message: 'KubeGuardian Backend Running V2'
     });
 });
 
