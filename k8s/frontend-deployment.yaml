@@ -18,9 +18,8 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: kubeguardian-frontend
+        image: saahitiks/kubeguardian-frontend:latest
 
-        imagePullPolicy: Never
 
         ports:
         - containerPort: 5173

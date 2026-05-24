@@ -19,9 +19,8 @@ spec:
     spec:
       containers:
       - name: backend
-        image: kubeguardian-backend
+        image: saahitiks/kubeguardian-backend:latest
 
-        imagePullPolicy: Never
 
         ports:
         - containerPort: 5000
