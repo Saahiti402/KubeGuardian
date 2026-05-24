@@ -21,5 +21,17 @@ pipeline {
             }
         }
 
+        stage('Security Scan Backend') {
+            steps {
+                sh 'trivy image kubeguardian-backend'
+            }
+        }
+
+        stage('Security Scan Frontend') {
+            steps {
+                sh 'trivy image kubeguardian-frontend'
+            }
+        }
+
     }
 }
